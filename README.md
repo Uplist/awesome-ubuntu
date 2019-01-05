@@ -10,6 +10,10 @@
 - [Stacer](https://oguzhaninan.github.io/Stacer-Web/) - Linux System Optimizer & Monitoring.
 - [WPS Office](https://www.wps.com/office/linux)
   - [WPS Office Fonts](https://github.com/IamDH4/ttf-wps-fonts)
+  
+```sh
+sudo apt install -y curl git vim
+```
 
 ## GNOME Shell Extensions
 
@@ -31,3 +35,20 @@
 - [Todo.txt](https://extensions.gnome.org/extension/570/todotxt/) - A Gnome shell interface for todo.txt.
 - [VirtualBox applet](https://extensions.gnome.org/extension/1415/virtualbox-applet/) - Provide menu to run VirtualBox machines and switch between running VMs.
 - [Workspaces to Dock](https://extensions.gnome.org/extension/427/workspaces-to-dock/) - Transform Gnome Shell's overview workspaces into an intelligent dock.
+
+## zRAM
+
+- https://en.wikipedia.org/wiki/Zram
+- https://askubuntu.com/questions/1044976/make-zram-use-lz4-compression-algorithm
+- https://lwn.net/Articles/748681/
+
+```sh
+sudo apt install -y zram-config
+```
+
+```
+sudo vi /usr/bin/init-zram-swapping
+
+swapon -p 100 /dev/zram${DEVNUMBER}
+```
+
