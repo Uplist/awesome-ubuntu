@@ -46,9 +46,13 @@ sudo apt install -y curl git vim
 sudo apt install -y zram-config
 ```
 
-```
+Set `lz4` and `swapon -p 100`.
+```sh
 sudo vi /usr/bin/init-zram-swapping
 
+echo lz4 > /sys/block/zram${DEVNUMBER}/comp_algorithm
+echo $mem > /sys/block/zram${DEVNUMBER}/disksize
+mkswap /dev/zram${DEVNUMBER}
 swapon -p 100 /dev/zram${DEVNUMBER}
 ```
 
