@@ -44,6 +44,8 @@ sudo apt install -y curl gparted git vim
 
 ```sh
 sudo apt install -y zram-config
+
+zramctl
 ```
 
 Set `lz4` and `swapon -p 100`.
