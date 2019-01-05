@@ -9,6 +9,7 @@
 - [Guake Terminal](http://guake-project.org)
 - [Stacer](https://oguzhaninan.github.io/Stacer-Web/) - Linux System Optimizer & Monitoring.
 - [WPS Office](https://www.wps.com/office/linux)
+  - [WPS Office Fonts](https://github.com/IamDH4/ttf-wps-fonts)
 
 ## GNOME Shell Extensions
 
