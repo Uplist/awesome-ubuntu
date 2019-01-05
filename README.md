@@ -12,7 +12,7 @@
   - [WPS Office Fonts](https://github.com/IamDH4/ttf-wps-fonts)
   
 ```sh
-sudo apt install -y curl git vim
+sudo apt install -y curl gparted git vim
 ```
 
 ## GNOME Shell Extensions
